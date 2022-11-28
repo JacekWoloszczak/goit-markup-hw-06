@@ -905,9 +905,9 @@ h3 {
   align-items: flex-start;
   justify-content: center;
   position: relative;
-  margin-top: 20px;
+  margin-top: 24px;
   margin-left: 78px;
-
+  font-size: 14px;
   color: white;
 
   font-weight: 700;
@@ -940,7 +940,7 @@ h3 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: white;
   border: none;
-  left: 485px;
+  left: 468px;
   top: -50px;
   border-radius: 4px;
 }
