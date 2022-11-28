@@ -948,3 +948,54 @@ h3 {
   align-items: center;
   justify-content: center;
 }
+
+.header-modal {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  color: #212121;
+  margin-top: 40px;
+  text-align: center;
+}
+.modal .label-modal:nth-child(1) {
+  margin-top: 30px;
+}
+.modal .label-modal:nth-child(2) {
+  margin-top: 28px;
+}
+.modal .label-modal:nth-child(3) {
+  margin-top: 28px;
+}
+
+.modal .label-modal:nth-child(4) {
+  margin-top: 28px;
+}
+.label-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  margin-left: 40px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  color: #757575;
+}
+
+.input-modal {
+  width: 448px;
+  height: 40px;
+  position: relative;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.icon-modal {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  bottom: 14px;
+  left: 15px;
+}
