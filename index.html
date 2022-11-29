@@ -78,35 +78,42 @@
             </button>
             <h1 class="header-modal">Zostaw swoje dane w formularzu poniżej</h1>
             <form name="modal-formular">
-              <label class="label-modal">
-                Imię
-                <input class="input-modal" type="text" name="username" />
+              <fieldset class="field-modal">
+                <label class="label-modal" for="username"> Imię</label>
                 <svg width="12" height="12" class="icon-modal">
                   <use href="./images/icons.svg#icon-icon-user"></use>
                 </svg>
-              </label>
-              <label class="label-modal">
-                Telefon
-                <input class="input-modal" type="tel" name="userphone" />
+                <input class="input-modal" type="text" name="username" />
+              </fieldset>
+              <fieldset class="field-modal">
+                <label class="label-modal" for="userphone"> Telefon</label>
                 <svg width="13" height="13" class="icon-modal">
                   <use href="./images/icons.svg#icon-icon-contact"></use>
                 </svg>
-              </label>
-              <label class="label-modal">
-                Email
-                <input class="input-modal" type="email" name="usermail" />
+                <input class="input-modal" type="tel" name="userphone" />
+              </fieldset>
+              <fieldset class="field-modal">
+                <label class="label-modal" for="usermail"> Email</label>
                 <svg width="15" height="12" class="icon-modal">
                   <use href="./images/icons.svg#icon-icon-mail-contact"></use>
                 </svg>
-              </label>
+                <input class="input-modal" type="email" name="usermail" />
+              </fieldset>
 
-              <label class="label-modal">
-                Komentarz
-                <textarea
-                  name="commentary"
-                  placeholder="Wprowadź tekst"
-                ></textarea>
+              <label class="label-area" for="commentary"> Komentarz</label>
+              <textarea
+                class="area-modal"
+                name="commentary"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+              <br />
+              <input type="checkbox" name="check-legal" class="input-check" />
+              <label class="label-check" for="check-legal">
+                Oświadczam iż akceptuję&nbsp
+                <a class="legal-anchor" href="#">Regulamin</a> &nbspi&nbsp
+                <a class="legal-anchor" href="#">Politykę Prywatności</a>
               </label>
+              <button class="end-btn" type="submit">Wyślij</button>
             </form>
           </div>
         </div>
