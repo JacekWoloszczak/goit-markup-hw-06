@@ -134,15 +134,15 @@
                 checked
                 autocomplete="off"
               />
-
-              <svg class="icon-modal-check" width="11" height="8">
-                <use href="./images/icons.svg#icon-icon-check"></use>
-              </svg>
               <label class="label-check" for="legal">
+                <svg class="icon-modal-check" width="11" height="8">
+                  <use href="./images/icons.svg#icon-icon-check"></use>
+                </svg>
                 Oświadczam iż akceptuję&nbsp
                 <a class="legal-anchor" href="#">Regulamin</a> &nbspi&nbsp
                 <a class="legal-anchor" href="#">Politykę Prywatności</a>
               </label>
+
               <button class="end-btn" type="submit">Wyślij</button>
             </form>
           </div>
@@ -597,21 +597,24 @@
             </ul>
           </div>
           <form name="newsletter-in-footer" autocomplete="off">
-            <label class="label-footer">
-              ZAPISZ SIĘ DO NEWSLETTERA
-              <input
-                class="input-footer"
-                type="email"
-                name="newsletter"
-                placeholder="E-mail"
-              />
-            </label>
-            <button class="btn-newsletter" type="submit">
-              Zapisz się
-              <svg width="24" height="24" class="icon-newsletter">
-                <use href="./images/icons.svg#icon-icon-send"></use>
-              </svg>
-            </button>
+            <div class="footer-input-btn">
+              <label class="label-footer">
+                <h5 class="inner-label">ZAPISZ SIĘ DO NEWSLETTERA</h5>
+                <input
+                  class="input-footer"
+                  type="email"
+                  name="newsletter"
+                  placeholder="E-mail"
+                />
+
+                <button class="btn-newsletter" type="submit">
+                  Zapisz się
+                  <svg width="24" height="24" class="icon-newsletter">
+                    <use href="./images/icons.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </label>
+            </div>
           </form>
         </div>
       </div>
