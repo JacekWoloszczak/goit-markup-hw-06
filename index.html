@@ -80,24 +80,42 @@
             <form name="modal-formular">
               <fieldset class="field-modal">
                 <label class="label-modal" for="username"> Imię</label>
+
+                <input
+                  class="input-modal"
+                  type="text"
+                  name="username"
+                  id="username"
+                />
                 <svg width="12" height="12" class="icon-modal">
                   <use href="./images/icons.svg#icon-icon-user"></use>
                 </svg>
-                <input class="input-modal" type="text" name="username" />
               </fieldset>
               <fieldset class="field-modal">
                 <label class="label-modal" for="userphone"> Telefon</label>
+
+                <input
+                  class="input-modal"
+                  type="tel"
+                  name="userphone"
+                  id="userphone"
+                />
                 <svg width="13" height="13" class="icon-modal">
                   <use href="./images/icons.svg#icon-icon-contact"></use>
                 </svg>
-                <input class="input-modal" type="tel" name="userphone" />
               </fieldset>
               <fieldset class="field-modal">
                 <label class="label-modal" for="usermail"> Email</label>
+
+                <input
+                  class="input-modal"
+                  type="email"
+                  name="usermail"
+                  id="usermail"
+                />
                 <svg width="15" height="12" class="icon-modal">
                   <use href="./images/icons.svg#icon-icon-mail-contact"></use>
                 </svg>
-                <input class="input-modal" type="email" name="usermail" />
               </fieldset>
 
               <label class="label-area" for="commentary"> Komentarz</label>
@@ -106,9 +124,20 @@
                 name="commentary"
                 placeholder="Wprowadź tekst"
               ></textarea>
-              <br />
-              <input type="checkbox" name="check-legal" class="input-check" />
-              <label class="label-check" for="check-legal">
+
+              <input
+                type="checkbox"
+                name="legal"
+                id="legal"
+                class="input-check"
+                value="legal"
+                checked
+              />
+
+              <svg class="icon-modal-check" width="11" height="8">
+                <use href="./images/icons.svg#icon-icon-check"></use>
+              </svg>
+              <label class="label-check" for="legal">
                 Oświadczam iż akceptuję&nbsp
                 <a class="legal-anchor" href="#">Regulamin</a> &nbspi&nbsp
                 <a class="legal-anchor" href="#">Politykę Prywatności</a>
