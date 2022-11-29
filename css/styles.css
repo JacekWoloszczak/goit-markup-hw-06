@@ -935,7 +935,7 @@ h3 {
   position: relative;
   align-items: center;
   justify-content: center;
-
+  letter-spacing: 0.06em;
   padding-right: 72px;
   padding-left: 42px;
   width: 200px;
@@ -981,9 +981,7 @@ h3 {
   position: absolute;
   bottom: 44px;
   left: -40px;
-  /* display: flex;
-  align-items: center;
-  justify-content: flex-start; */
+
   padding: 0px 40px 0px 40px;
   font-weight: 400;
   font-size: 12px;
@@ -1041,9 +1039,9 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  letter-spacing: 0.03em;
   margin-top: 20px;
-  margin-left: -8px;
+  margin-left: 8px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -1097,6 +1095,7 @@ h3 {
   color: white;
   cursor: pointer;
   border: none;
+  letter-spacing: 0.06em;
 }
 
 .field-modal:focus-within {
