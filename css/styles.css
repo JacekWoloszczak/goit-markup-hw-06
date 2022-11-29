@@ -856,6 +856,7 @@ h3 {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   transition: transform 250ms;
+  z-index: 2;
 }
 .is-hidden {
   transform: translateX(100%);
