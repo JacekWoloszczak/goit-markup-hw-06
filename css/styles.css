@@ -445,6 +445,7 @@ h3 {
 
 .primer-contener {
   width: 1600px;
+  margin: 0 auto;
   background: #2f303a;
   background-image: linear-gradient(
       rgba(36, 37, 44, 0.4),
@@ -1016,6 +1017,8 @@ h3 {
   background: #ffffff;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .label-area {
@@ -1023,14 +1026,15 @@ h3 {
   font-size: 12px;
   line-height: 1.16;
   color: #757575;
-  margin-top: 28px;
-  margin-left: 40px;
+  padding: 28px 40px 0px 40px;
 }
 .area-modal {
   width: 448px;
   height: 120px;
   margin-left: 40px;
   margin-top: 4px;
+  font-size: 12px;
+  font-weight: 400;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 16px;
@@ -1052,14 +1056,9 @@ h3 {
   position: absolute;
   top: 435px;
   left: 45px;
-  border: 1px solid black;
-  width: 16px;
-  height: 15px;
-  margin: 0;
-  padding: 0;
+  display: none;
 }
-
-.icon-modal-check {
+.artifical-checkbox {
   position: absolute;
   top: 435px;
   left: 45px;
@@ -1067,14 +1066,18 @@ h3 {
   height: 15px;
   border-radius: 1px;
   border: 1px solid #212121;
-  fill: white;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.icon-modal-check {
+  position: absolute;
+  top: 438px;
+  left: 47px;
+  fill: white;
+}
 
-.input-check:checked {
+.input-check:checked + label > .artifical-checkbox {
   background-color: #2196f3;
-  border: 1px solid #2196f3;
 }
 
 .legal-anchor {
@@ -1101,4 +1104,11 @@ h3 {
   border: 1px solid #2196f3;
   color: #2196f3;
   fill: #2196f3;
+}
+
+.area-modal:focus {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  color: #2196f3;
+  border: 1px solid #2196f3;
 }
